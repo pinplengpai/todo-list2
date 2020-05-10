@@ -17,14 +17,12 @@ class App extends Component {
       item: e.target.value
     });
   };
-
   handleSubmit = e => {
     e.preventDefault();
     const newItem = {
       id: this.state.id,
       item: this.state.item
     };
-
   const updatedItems = [...this.state.items, newItem];
 
   this.setState({
